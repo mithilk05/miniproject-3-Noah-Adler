@@ -40,15 +40,17 @@ The Job Analysis Project involves analyzing job data from a JSON file, implement
 - **Knowledge Points**: HTML structure, CSS styling, basic UI design.
   - **Proper HTML Layout (1 Point)**: Ensure a well-structured HTML layout to display job data and interactive elements such as filtering and sorting dropdowns. The webpage should provide an intuitive user interface that is easy to navigate. The page should include an input element to load data, filter forms, and a section to display job listings.
 
-### 2. Load Jobs Data from JSON File (1 Point)
+### 2. Load Jobs Data from JSON File (no Point will be Deducted)
 
 - **Knowledge Points**: File handling, JSON parsing.
-  - **File Input Handling and Data Loading (1 Point)**: The project should allow the user to select a JSON file via an `<input type="file">` element. The file should be read using a `FileReader` to parse the JSON data and create Job objects. Implement error handling to ensure that if the file is missing or the format is incorrect, an appropriate error message is displayed.
+  - **File Input Handling and Data Loading**: The project should allow the user to select a JSON file via an `<input type="file">` element. The file should be read using a `FileReader` to parse the JSON data and create Job objects. Implement error handling to ensure that if the file is missing or the format is incorrect, an appropriate error message is displayed.
 
-### 3. Define and Use a `Job` Class (1 Point)
+### 3. Define and Use a `Job` Class (2 Points)
 
-- **Knowledge Points**: Object-oriented programming, constructors.
-  - **Job Class Creation (1 Point)**: The `Job` class should encapsulate all relevant job details, including title, posted time, type, level, skill, and detail. The class should have a constructor and methods to provide detailed information about each job. Ensure that the `Job` class provides methods for retrieving formatted details and creating job instances from data.
+- **Knowledge Points**: Object-oriented programming, constructors, data encapsulation, method abstraction.
+  - **Job Class Definition (1 Point)**: The `Job` class should encapsulate all relevant job details, including title, posted time, type, level, skill, and detail. The constructor should correctly initialize these properties to ensure comprehensive encapsulation of job information.
+   - **Job Class Methods and Usage (1 Point)**: Create methods for retrieving and formatting job details, such as `getDetails()` and `getFormattedPostedTime()`. These methods should provide proper behavior abstraction to effectively utilize the properties of the `Job` object for subsequent features like filtering and sorting.
+
 
 ### 4. Filtering Functionality (2 Points)
 
